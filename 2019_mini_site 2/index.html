@@ -1,0 +1,107 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/pass_the_parcel.css">
+</head>
+
+<body>
+	<div class="header">
+		<div>
+			<a href="https://www.bidorbuy.co.za/" style="padding: 0"><img src="img/b.png" width="56" height="56"></a>
+			<div>
+				<a href="https://www.bidorbuy.co.za/static/category/Deal_of_the_Week_11411.html">Deal of the Week</a>
+				<a href="https://www.bidorbuy.co.za/stores">Stores</a>
+				<span>Promotions
+					<ul>
+						<li><a href="https://www.bidorbuy.co.za/static/CrazyWednesday.html">Crazy Wednesday</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/SnapFriday.html">Snap Friday</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/WeekendSpecials.html">Weekend Specials</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/Crazy.html">Crazy Auctions</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/category/Charity_Listings_6900.html">Charity Listings</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/category/CategoryDiscoveryMiles.html">Discovery Miles</a></li>
+						<li><a href="https://www.bidorbuy.co.za/jsp/newsletters/NewsletterSignUp.jsp">Subscribe!</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/MakeAnOffer.html">Make an Offer</a></li>
+						<li><a href="https://www.bidorbuy.co.za/static/CategoryShopCredit.html">Shop on Credit</a></li>
+						<li><a href="https://www.bidorbuy.co.za/flights?affid=1214307">Book Flights</a></li>
+						<li><a href="https://www.bidorbuy.co.za/travel">Book Holidays</a></li>
+					</ul>
+				</span>
+				<a href="https://support.bidorbuy.co.za/">Help<span>087 350 0099</span></a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="slash"></div>
+		<div class="artwork">
+			<div class="pass_the_parcel">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="parcel_front start"></div>
+			<div class="prize">
+				<div class="voucher voucher_a"></div>
+				<div class="voucher voucher_b"></div>
+			</div>
+			<div class="better_luck_next_time">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="flares">
+				<div class="flare flare_a"></div>
+				<div class="flare flare_b"></div>
+			</div>
+			<div class="parcel"></div>
+			<div class="parcel_back"></div>
+		</div>
+		<div class="panel">
+			<div class="section intro slide_in">
+				<h1><span>WIN</span> with bidorbuy's<br /><span>20th birthday</span> celebration!</h1>
+				<p>Please enter your details to unwrap the parcel.</p>
+				<form id="player_details">
+					<input type="text" placeholder="Your name" name="player_name" required>
+					<input type="email" placeholder="Your email address" name="player_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+					<input class="checked" id="subscribe_to_emails" name="subscribe_to_emails" type="checkbox" checked>
+					<label for="subscribe_to_emails">I want to receive promotional mailers.</label>
+					<input id="agree_to_terms" name="agree_to_terms" type="checkbox" required>
+					<label for="agree_to_terms">I agree to the terms and conditions.</label>
+					<button type="submit">Unwrap the parcel!</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<div>
+				<h3>Community</h3>
+				<a href="https://blog.bidorbuy.co.za/" style="color: #336699">Blog</a>
+				<a href="https://forums.bidorbuy.co.za/" style="color: #336699">Forum</a>
+				<a href="https://twitter.com/bidorbuy_co_za"><img src="img/twitter.png" width="32" height="32"></a>
+				<a href="https://www.facebook.com/bidorbuy.co.za"><img src="img/facebook.png" width="32" height="32"></a>
+				<a href="https://za.pinterest.com/bidorbuy/"><img src="img/pinterest.png" width="32" height="32"></a>
+				<a href="https://za.linkedin.com/company/bidorbuy-co-za"><img src="img/linkedin.png" width="32" height="32"></a>
+			</div>
+			<div>
+				<h3>Shop on the go</h3>
+				<a href="https://m.bidorbuy.co.za/jsp/system/Referral.jsp?ID=TF_User_100&utm_source=iphone&utm_medium=website&utm_campaign=pass-the-parcel&mt=8&ct=bidorbuy-web&target=https://itunes.apple.com/app/apple-store/id473177043?pt=563695"><img src="img/app_store.png" width="116" height="40"></a>
+				<a href="https://m.bidorbuy.co.za/jsp/system/Referral.jsp?ID=TF_User_100&utm_source=android&utm_medium=website&utm_campaign=pass-the-parcel&target=https://play.google.com/store/apps/details?id=com.bidorbuy.app"><img src="img/google_play.png" width="116" height="40"></a>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Set some initial states while scripts are loading:
+		document.querySelector(".parcel_back").hidden = true;
+		document.querySelector(".prize").hidden = true;
+		document.querySelector(".better_luck_next_time").hidden = true;
+		
+		// Fix for Safari
+		document.querySelector(".pass_the_parcel").hidden = true;
+		setTimeout(function () {
+			document.querySelector(".pass_the_parcel").hidden = false;
+		}, 1);
+	</script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/pass_the_parcel.js"></script>
+</body>
